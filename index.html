@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tap icon link -->
+     <link rel="icon" href="./imgs/tap.png">
+    <!--Bootstrap  style  file-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--Main  style  file-->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Login</title>
+  </head>
+  <body> 
+     <nav class="d-none p-4 position-fixed top-0 w-100" >
+        <div class="container d-flex justify-content-between align-items-center text-white">
+          <h2 class="logo">Login System</h2>
+          <button class="btn btn-danger" id="logOutBtn">Logout</button>
+        </div>
+      </nav>
+    <main class="row  justify-content-center align-items-center">
+    <!-- Login Section  -->
+        <section
+        id="logInBox"
+        class="d-flex flex-column align-items-center justify-content-center col-md-4  p-4 rounded-2 "
+      >
+        <h1>Smart Login System</h1>
+        <input
+          class="form-control my-1"
+          type="text"
+          placeholder="Enter Your Email"
+          id="logEmailInput"
+        />
+        
+        <input
+          class="form-control my-1"
+          type="password"
+          placeholder="Enter Your Password"
+          id="logPassInput"
+        />
+
+        <button class="w-100 my-4 btn btn-outline-success" id="logInBtn">
+          Login
+        </button>
+        <p id="warningLogMessage" class="d-none text-danger">
+          Invalid Email Or Password
+        </p>
+ 
+        <p>Don’t have an account? <span id="signUpSpan"> Sign Up</span></p>
+      </section>
+    <!-- Sign Up Section  -->
+
+      <section
+        id="signUpBox"
+        class="d-none flex-column align-items-center justify-content-center col-md-4  p-4 rounded-2"
+      >
+        <h1 class="my-4">Smart Login System</h1>
+        <input
+          class="form-control my-1"
+          type="text"
+          placeholder="Enter Your Full Name"
+          id="signUpNameInput"
+        />
+        <p id="invalidName" class="d-none text-danger">Your name must be atleast 3 characters!</p>
+        <input
+          class="form-control my-1"
+          type="text"
+          placeholder="Enter Your Email"
+          id="signUpEmailInput"
+        />
+        <p id="invalidEmail" class="d-none text-danger">Your Email must be as email@email.com!</p>
+        <p id="dupplicatedEmail" class="d-none text-danger">Your Email is registered already</p>
+      
+        <input
+          class="form-control my-1"
+          type="password"
+          placeholder="Enter Your Password"
+          id="signUpPassInput"
+        />
+        <p id="invalidPass" class="d-none text-danger">Your Password must be 8 digits atleast!</p>
+
+        <input
+          class="form-control my-1"
+          type="file"
+          placeholder="Upload your img"
+          id="imgInput"
+        />
+
+        <button class="w-100 my-4 btn btn-outline-success" id="signUpBtn">
+          SignUp
+        </button>
+        <p>You have an account? <span id="logInSpan">Login</span></p>
+      </section>
+
+ <!-- Profile Section -->
+      <section
+        id="profile"
+        class="col-md-4  d-none flex-column align-items-center justify-content-center p-4 rounded-2"
+      >
+        <div>
+          <img
+            class="rounded-circle my-4"
+            src=""
+            id="userImg"
+            alt="User profile Picture" />
+        </div>
+
+        <h2>Hello <span id="userFullName"></span></h2>
+      </section>
+    </main>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

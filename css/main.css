@@ -1,0 +1,17 @@
+main{
+    height: 100vh;
+    background-image: url("../imgs/bg.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+span{
+    cursor: pointer;
+}
+section{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#profile img{
+    width: 200px;
+    height:200px;
+}
